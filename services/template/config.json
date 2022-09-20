@@ -1,0 +1,9 @@
+{
+    "hub": {
+        "host": "localhost",
+        "port": 6969 
+    },
+    "serviceName": "templateService",
+    "entryFile": "main.js",
+    "apiRoot" : "template"
+}

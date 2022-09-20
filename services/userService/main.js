@@ -1,4 +1,18 @@
-var fs = require('fs');
+var config = require('./config.json');
+const express = require('express');
+const app = express();
+let result = false;
 
-var config = JSON.parse(fs.readFileSync("./config.json"));
-console.log(config);
+app.get('/ttt', ((req, res)=> {
+    res.status(200).send('loginService');
+}));
+
+app.listen(config.hub.port, (()=>{
+    console.log('Listening on port: ' + config.hub.port);
+    result  = true;
+}
+));
+
+module.exports = {
+    result: result
+}

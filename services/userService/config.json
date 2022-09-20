@@ -3,5 +3,7 @@
         "host": "localhost",
         "port": 6968
     },
-    "serviceName": "userService"
+    "serviceName": "userService",
+    "entryFile": "main.js",
+    "route" : "user"
 }
